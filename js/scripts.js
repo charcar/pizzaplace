@@ -24,15 +24,16 @@ Pizza.prototype.totalCost = function() {
 // END OF BUSINESS LOGIC
 
 $(document).ready(function() {
-  $(form#pizzaPlaceOrder).submit(function(event) {
+  $("form#pizzaPlaceOrder").submit(function(event) {
     event.preventDefault();
 // gather input from size selection
     var size = $("select#pizzaSizeSelected").val();
 // gather input from number of toppings selected
-    var toppingsPrice = input[type="checkbox"]:checked).length);
-// create new pizza object
-    yourOrder = new Pizza(size, toppingsPrice);
-// do the math! and return the cost!
-    return yourOrder;
+    var toppingsPrice = ($("input:checkbox:checked").length);
+// create new pizza object and store new values
+    var newPizza = new Pizza(size, toppingsPrice);
+// use the method constructor to calculate cost
+    finalPrice = newPizza.totalCost();
+    console.log(finalPrice);
   });
 });
