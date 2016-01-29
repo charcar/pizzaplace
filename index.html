@@ -12,23 +12,43 @@
       <div>
         <p>You've got lots of options today</p>
         <form id=pizzaPlaceOrder>
-          <div>
-        <ul>
-          <li>Numbers divisible by three become 'ping'</li>
-          <li>Numbers divisible by 5 become 'pong'</li>
-          <li>And numbers that are divisible by 15 will produce 'ping-pong!'</li>
-        </ul>
         <div>
-          <span><strong>Enter your number below:</strong></span>
-            <input class ="input" id="input">
-            <button class="btn" type="submit">Let's play ping pong</button>
+          <select id="pizzaSizeSelected">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          </select>
+
+          <div>
+            <input type="checkbox" name="toppings" id="morecheese" value="1" />
+            <label for ="morecheese">X-traCheese</label>
+
+            <input type="checkbox" name="toppings" id="bacon" value="1" />
+            <label for ="bacon">Bacon</label>
+
+            <input type="checkbox" name="toppings" id="pepperoni" value="1" />
+            <label for ="pepperoni">Pepperoni</label>
+
+            <input type="checkbox" name="toppings" id="mushrooms" value="1" />
+            <label for ="mushrooms">Mushrooms</label>
+
+            <input type="checkbox" name="toppings" id="peppers" value="1" />
+            <label for ="peppers">Peppers/label>
+
+            <input type="checkbox" name="toppings" id="pineapple" value="1" />
+            <label for ="pineapple">Pineapple</label>
+          </div>
+
+          <div>
+            <button class="btn" type="submit">Click here to place your order</button>
           </form>
+          </div>
         </div>
       </div>
-    </div>
-      <div class = 'results'>
-        <p>Your results:<p>
-          <ul id='result'></ul>
+        <div class = 'results'>
+          <p>Your results:<p>
+            <ul id='result'></ul>
+        </div>
       </div>
   </body>
 </html>

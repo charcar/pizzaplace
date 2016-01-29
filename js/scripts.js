@@ -26,13 +26,13 @@ Pizza.prototype.totalCost = function() {
 $(document).ready(function() {
   $(form#pizzaPlaceOrder).submit(function(event) {
     event.preventDefault();
-// gather input from data fields
+// gather input from size selection
     var size = $("select#pizzaSizeSelected").val();
-
+// gather input from number of toppings selected
+    var toppingsPrice = input[type="checkbox"]:checked).length);
+// create new pizza object
+    yourOrder = new Pizza(size, toppingsPrice);
+// do the math! and return the cost!
+    return yourOrder;
   });
 });
-
-
-// create new pizza object
-//
-// do the math! and return the cost!
