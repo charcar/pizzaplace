@@ -4,14 +4,15 @@
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <script src="css/styles.css"></script>
-    <title>Ping-Pong</title>
+    <title>Pizza Time</title>
   </head>
   <body>
     <div class = 'container'>
-      <h2>Welcome to the Ping Pong game</h2>
+      <h2>Who wants a pizza??</h2>
       <div>
-        <p>The rules are as follows:</p>
-        <p>Enter an integer into the box provided, and we will play some ping-pong!</p>
+        <p>You've got lots of options today</p>
+        <form id=pizzaPlaceOrder>
+          <div>
         <ul>
           <li>Numbers divisible by three become 'ping'</li>
           <li>Numbers divisible by 5 become 'pong'</li>
@@ -19,7 +20,6 @@
         </ul>
         <div>
           <span><strong>Enter your number below:</strong></span>
-          <form id="submitField">
             <input class ="input" id="input">
             <button class="btn" type="submit">Let's play ping pong</button>
           </form>

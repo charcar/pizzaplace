@@ -21,11 +21,18 @@ Pizza.prototype.totalCost = function() {
   this.totalCost = cost;
   return cost;
 };
-//
 // END OF BUSINESS LOGIC
-//
+
+$(document).ready(function() {
+  $(form#pizzaPlaceOrder).submit(function(event) {
+    event.preventDefault();
 // gather input from data fields
-//
+    var size = $("select#pizzaSizeSelected").val();
+
+  });
+});
+
+
 // create new pizza object
 //
 // do the math! and return the cost!
