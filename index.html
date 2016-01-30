@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="css/styles.css"></script>
+    <link href="css/styles.css"></script>
+
     <title>Pizza Time</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <!-- <p><a class="btn btn-primary btn-md" href="#" role="button">Order Now</a></p> IMPLEMENT DROPDOWN WHEN ORDER NOW BUTTON PRESSED -->
+    </div>
     <div class = 'container'>
       <h2>Who wants a pizza??</h2>
       <div>
-        <p>You've got lots of options today</p>
+        <p>Here's what we've got today:</p>
         <form id=pizzaPlaceOrder>
         <div>
           <select id="pizzaSizeSelected">
@@ -20,11 +26,11 @@
           </select>
 
           <div>
-            <input type="checkbox" name="toppings" id="morecheese" value="1" />
-            <label for ="morecheese">X-traCheese</label>
+            <input type="checkbox" name="toppings" id="morecheese">
+            <label>X-traCheese</label>
 
-            <input type="checkbox" name="toppings" id="bacon" value="1" />
-            <label for ="bacon">Bacon</label>
+            <input type="checkbox" name="toppings" id="bacon">
+            <label>Bacon</label>
 
             <input type="checkbox" name="toppings" id="pepperoni" value="1" />
             <label for ="pepperoni">Pepperoni</label>
@@ -46,8 +52,8 @@
         </div>
       </div>
         <div class = 'results'>
-          <p>Your order total:<p>
-            <ul id='result'></ul>
+          <p><span>Your order total: <p id = results></p></span><p>
+            
         </div>
       </div>
   </body>

@@ -35,6 +35,6 @@ $(document).ready(function() {
 // use the method constructor to calculate cost
     finalPrice = newPizza.totalCost();
     console.log(finalPrice);
-    $("ul#result").append("<li><span class='orderTotal'>" + finalPrice + "</span</li>"); 
+    $("p#results").append("<p>" + "$" + finalPrice + "</p>");
   });
 });
